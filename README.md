@@ -16,7 +16,7 @@ Demo mini e-commerce untuk portfolio:
 ---
 
 ## 📸 Preview
-_Sisipkan GIF/screenshot di sini (mis. `docs/demo.gif`)._
+![Mini Shop E2E](docs/run.gif)
 
 ---
 
