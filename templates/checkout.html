@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="h4 mb-3">Checkout</h2>
+{% if error %}<div class="alert alert-danger">{{ error }}</div>{% endif %}
+<form id="checkout-form" method="post" class="row gy-3" data-testid="checkout-form">
+  <div class="col-md-6">
+    <label class="form-label">Name</label>
+    <input class="form-control" name="name" placeholder="Your name" data-testid="name">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Email</label>
+    <input class="form-control" type="email" name="email" placeholder="you@example.com" data-testid="email">
+  </div>
+  <div class="col-12">
+    <label class="form-label">Address</label>
+    <input class="form-control" name="address" placeholder="Street, City" data-testid="address">
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary submit-checkout" type="submit" data-testid="submit-order">Place Order</button>
+  </div>
+</form>
+{% endblock %}

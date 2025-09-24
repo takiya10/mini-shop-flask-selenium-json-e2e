@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center py-5">
+  <h2 id="success-message" class="mb-3">Order placed! 🎉</h2>
+  <p>Thanks, {{ name }}. We have received your order.</p>
+  <a class="btn btn-outline-secondary mt-2" href="{{ url_for('index') }}">Back to Home</a>
+</div>
+{% endblock %}

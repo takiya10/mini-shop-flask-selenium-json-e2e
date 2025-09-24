@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="h4 mb-3">Your Cart</h2>
+
+{% if items %}
+<ul class="list-group mb-3" data-testid="cart-list">
+  {% for p in items %}
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    {{ p.name }}
+    <span class="badge bg-secondary">${{ "%.2f"|format(p.price) }}</span>
+  </li>
+  {% endfor %}
+</ul>
+<p class="fw-semibold">Total: ${{ "%.2f"|format(total) }}</p>
+<a href="{{ url_for('checkout') }}" class="btn btn-success checkout-link" data-testid="go-checkout">Go to Checkout</a>
+{% else %}
+<div class="alert alert-info">Cart is empty.</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,4 @@
+.card-product{ transition: transform .08s ease; }
+.card-product:hover{ transform: translateY(-2px); }
+.price{ font-weight:600; }
+.search-wrap{ gap:.5rem; }

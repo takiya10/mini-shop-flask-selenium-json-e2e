@@ -1,0 +1,15 @@
+[
+  {"action":"open_url","value":"http://127.0.0.1:5000/"},
+  {"action":"fill","selector":"[data-testid='search-input']","value":"Laptop"},
+  {"action":"click","selector":"[data-testid='search-btn']"},
+
+  {"action":"click","selector":".add-to-cart"},
+  {"action":"wait_url_contains","value":"/cart"},
+
+  {"action":"click","selector":"[data-testid='go-checkout']"},
+  {"action":"fill","selector":"[data-testid='name']","value":"John Doe"},
+  {"action":"fill","selector":"[data-testid='email']","value":"john@example.com"},
+  {"action":"fill","selector":"[data-testid='address']","value":"123 Main St"},
+  {"action":"click","selector":"[data-testid='submit-order']"},
+  {"action":"wait_text","selector":"#success-message","value":"Order placed!"}
+]
