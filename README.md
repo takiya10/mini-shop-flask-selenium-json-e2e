@@ -27,21 +27,6 @@ _Sisipkan GIF/screenshot di sini (mis. `docs/demo.gif`)._
 
 ---
 
-## 🗂️ Struktur
-.
-├─ app.py
-├─ requirements.txt
-├─ templates/
-├─ static/
-└─ tests/
-├─ e2e_runner.py
-└─ steps.json
-
----
-
-
----
-
 ## 🚀 Quick Start
 ```bash
 pip install -r requirements.txt
